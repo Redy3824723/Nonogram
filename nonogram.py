@@ -206,6 +206,17 @@ for path in os.listdir(r"./images"):
 
 size = (10, 10)
 game = Nonogram(size[0], size[1])
+
+"""
+Для запуска игры с игровым полем по определённой картинке:
+game.start(Image.open(r"./images/пироженое.png"), size)
+
+Для запуска игры с игровым полем по случайной картинке:
+game.start(Image.open(random.choice(imgs)), size)
+
+Для запуска игры со случайным игровым полем:
+game.start()
+"""
 game.start(Image.open(random.choice(imgs)), size)
 while not game.is_game_over:
     game.print_board()
