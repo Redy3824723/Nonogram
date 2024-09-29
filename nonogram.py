@@ -5,7 +5,7 @@ class Cell:
     def __init__(self, x: int, y: int, number: int):
         self.x, self.y, self.number = x, y, number
         self.is_open = self.is_black = self.is_error_move = False
-        self.symbol = "."
+        self.symbol = "X"
 
 class Nonogram():
     def __init__(self, rows: int, columns: int):
