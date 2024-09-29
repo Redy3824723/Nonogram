@@ -36,7 +36,7 @@ class.Nonogram - Основной класс со всеми данными об
 
 # Nonogram (English)
 ### Before launching:
-``python
+```python
 pip install Pillow
 ```
 
